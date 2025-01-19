@@ -1,37 +1,36 @@
-# JWT Decoder & Multi-Decoder Tool
+# **JWT Hacker - The Ultimate Multi-Decoder Tool**
 
-Welcome to the **JWT Decoder & Multi-Decoder Tool**! This powerful Python-based application combines state-of-the-art decoding capabilities with a sleek hacker-themed GUI. Decode, decipher, and analyze JWT tokens and other encoded data effortlessly.
+Welcome to **JWT Hacker**, the ultimate Python-based tool for decoding, deciphering, and analyzing JWT tokens and other encoded data! This tool combines advanced decoding algorithms with a sleek, futuristic, hacker-themed GUI to elevate your toolkit to the next level.
 
 ---
 
-## 🚀 Features
+## 🚀 **Features**
 
-- **JWT Token Decoding**: Automatically decodes JWT headers and payloads.
-- **Multi-Decoder Support**:
-  - Base64
-  - Base58
-  - Hexadecimal
+- **Advanced JWT Decoding**: Parse and analyze JWT headers, payloads, and signatures with ease.
+- **Multi-Algorithm Decoder**: Decode a wide variety of encoded data formats, including:
+  - Base64, Base58, Base91
+  - Hexadecimal, ASCII85
+  - Gzip, Zlib
+  - ROT13
+  - AES (key-based decryption)
+  - RSA (private key required)
   - URL Decoding
-  - Gzip
-  - Zlib
-  - AES (decryption with a key)
-  - RSA (requires private key)
-  - And many more!
-- **Thread-Safe GUI**: Ensures seamless decoding while preventing UI freezes.
-- **Sci-Fi Hacker Theme**: Immerse yourself in a futuristic green-on-black interface.
-- **Save Decoded Results**: Export your decoded output for further analysis.
-- **Automatic Detection**: Automatically applies appropriate decoding techniques to pasted data.
+  - Custom Algorithms and more!
+- **Sleek Hacker-Themed GUI**: A Sci-Fi interface with a green-on-black aesthetic.
+- **Live Feedback Status Bar**: Instant decoding progress and status updates.
+- **Icon Support**: Modern icons for enhanced cross-platform presentation.
+- **Save and Export Results**: Save decoded outputs to a file for future analysis.
+- **Extendable Design**: Easily integrate new decoding algorithms and features.
 
 ---
 
-## 🔧 Requirements
+## 🔧 **Requirements**
 
-Ensure you have the following installed:
+Ensure the following are installed on your system:
+- **Python**: Version 3.8 or higher
+- **pip**: Python package manager
 
-- Python 3.8+
-- pip (Python package manager)
-
-Install the required dependencies:
+Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -39,70 +38,68 @@ pip install -r requirements.txt
 
 ---
 
-## 🖥️ Installation
+## 🖥️ **Installation**
 
+You can install JWT Hacker in two ways: **GitHub** or **PyPI**.
+
+### From GitHub
 1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/JWT-Multi-Decoder.git
-```
-
+   ```bash
+   git clone https://github.com/GreyNodeSecurity/JWT_Hacker.git
+   ```
 2. Navigate to the project directory:
-
-```bash
-cd JWT-Multi-Decoder
-```
-
-3. Installation Process:
-_You may need to setup Python Environment first;_
-```bash 
-python3 -m venv venv
-
-source venv/bin/activate
-```
-_Install the Requirements:
-```bash
-pip install -r requirements.txt
-```
-
+   ```bash
+   cd JWT_Hacker
+   ```
+3. Set up a virtual environment and install requirements:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 4. Run the tool:
+   ```bash
+   python -m jwt_hacker.gui
+   ```
 
-```bash
-python JWT_Decoder.py
-```
+### From PyPI
+1. Install JWT Hacker via pip:
+   ```bash
+   pip install jwt-hacker
+   ```
+2. Run the tool:
+   ```bash
+   jwthacker
+   ```
 
 ---
 
-## 🕹️ Usage
+## 🕹️ **Usage**
 
 1. **Paste Your Encoded Data**:
-   - Enter a JWT token or any encoded data in the input box.
+   - Enter a JWT token or any encoded data into the input box.
 
 2. **Decode**:
-   - Press the `Decode` button to analyze and decode the data.
+   - Click the `Decode` button to analyze and decode the data.
 
 3. **Save Output**:
-   - Save your decoded results for further use.
+   - Save the decoded results using the `Save Output` button.
 
 ---
 
-## 🎨 Screenshots
-
-### Hacker-Themed GUI
-![Screenshot of the GUI with black-and-green theme](screenshot.png)
-
----
-
-## 📜 Supported Decoding Types
+## 📜 **Supported Decoding Types**
 
 | Encoding Type      | Description                             |
 |--------------------|-----------------------------------------|
 | Base64             | Standard Base64 encoding.              |
 | Base58             | Bitcoin-friendly encoding.             |
+| Base91             | Extended encoding format.              |
 | Hexadecimal        | Converts hex strings to text.          |
+| ASCII85            | Ascii85 encoding (Adobe variant).      |
 | URL Decoding       | Decodes URL-encoded strings.           |
 | Gzip               | Decompresses Gzip-compressed data.     |
 | Zlib               | Decompresses Zlib-compressed data.     |
+| ROT13              | Rotational cipher for alphabets.       |
 | AES (with key)     | AES decryption (key required).         |
 | RSA (private key)  | RSA decryption (key required).         |
 | JWT Parsing        | Parses JWT headers and payloads.       |
@@ -110,18 +107,25 @@ python JWT_Decoder.py
 
 ---
 
-## 🛠️ Extending the Tool
+## 🎨 **Screenshots**
+
+### Hacker-Themed GUI
+![Screenshot of the GUI with black-and-green theme](screenshot.png)
+
+---
+
+## 🛠️ **Extending the Tool**
 
 1. **Add New Decoding Methods**:
    - Open the `decoder.py` file.
    - Add your decoding logic in the `Decoder` class.
 
 2. **Customize the GUI**:
-   - Modify the `JWT_Decoder.py` file to adjust the GUI theme and layout.
+   - Modify the `gui.py` file to adjust the GUI theme and layout.
 
 ---
 
-## 🤝 Contributions
+## 🤝 **Contributions**
 
 We welcome contributions to improve the tool!
 
@@ -132,17 +136,17 @@ We welcome contributions to improve the tool!
 
 ---
 
-## 📄 License
+## 📄 **License**
 
 This project is licensed under the [MIT License](LICENSE).  
-Please review the terms before using this software..
+Please review the terms before using this software.
 
 ---
 
-## 🌐 Connect
+## 🌐 **Connect**
 
 - [GitHub](https://github.com/GreyNodeSecurity)
-- [Project Issues](https://github.com/GreyNodeSecurity/JWT-Multi-Decoder/issues)
+- [Project Issues](https://github.com/GreyNodeSecurity/JWT_Hacker/issues)
 
 ---
 
