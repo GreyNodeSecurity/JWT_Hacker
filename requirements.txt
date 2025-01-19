@@ -1,0 +1,4 @@
+tkinterdnd2
+pycryptodome
+pyjwt
+colorama
