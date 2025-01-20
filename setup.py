@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jwt-hacker",
-    version="1.1.0",  # Updated to reflect new features
+    version="1.1.1",  # Updated to reflect new features
     description="A futuristic tool to decode, analyze, and manipulate JWT tokens",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
@@ -37,9 +37,10 @@ setup(
     keywords="JWT decoding hacking security tool analysis manipulation",
     python_requires=">=3.6",
     install_requires=[
-        "pycryptodome>=3.11.0",
-        "pyjwt>=2.4.0",
-        # Add other dependencies as required
+        "pycryptodome>=3.11.0",  # For cryptographic operations
+        "pyjwt>=2.4.0",  # For JWT processing
+        "cryptography>=39.0.0",  # For modern cryptographic primitives (like Argon2, ECC)
+        "tkintertable",  # If tkinter is used with extended functionality
     ],
     extras_require={
         "dev": ["pytest", "black", "flake8"],  # Development dependencies
@@ -50,7 +51,8 @@ setup(
         ],
     },
     data_files=[
-        ("docs", ["README.md", "LICENSE"]),  # Include documentation files
+        ("docs", ["README.md", "LICENSE"]), # Include documentation files
+        ("resources", ["resources/icon.ico", "resources/icon.icns", "resources/icon.png"]), 
     ],
     zip_safe=False,  # Set to False if the package cannot be reliably used from a .zip file
 )
