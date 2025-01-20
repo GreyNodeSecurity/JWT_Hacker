@@ -75,6 +75,9 @@ def main():
     org_label = Label(header_frame, text="Grey Node Security", fg="lime", bg="black", font=("Courier", 16, "bold"))
     org_label.pack(side="left", padx=10)
 
+    org_label = Label(header_frame, text="JWT Hacker v1.1.1", fg="lime", bg="black", font=("Courier", 16, "bold"))
+    org_label.pack(side="center", padx=10)    
+
     coder_label = Label(header_frame, text="Programmed by: Z3r0 S3c", fg="lime", bg="black", font=("Courier", 12, "italic"))
     coder_label.pack(side="right", padx=10)
 

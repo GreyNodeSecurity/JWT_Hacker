@@ -41,6 +41,7 @@ setup(
         "pyjwt>=2.4.0",  # For JWT processing
         "cryptography>=39.0.0",  # For modern cryptographic primitives (like Argon2, ECC)
         "tkintertable",  # If tkinter is used with extended functionality
+        "requests>=2.20.0",
     ],
     extras_require={
         "dev": ["pytest", "black", "flake8"],  # Development dependencies
