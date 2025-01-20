@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jwt-hacker",
-    version="1.1.1",  # Updated to reflect new features
+    version="1.1.2",  # Updated to reflect new features
     description="A futuristic tool to decode, analyze, and manipulate JWT tokens",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
