@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jwt-hacker",
-    version="1.1.3",  # Updated to reflect new features
+    version="1.1.4",  # Updated to reflect new features
     description="A futuristic tool to decode, analyze, and manipulate JWT tokens",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
@@ -39,9 +39,12 @@ setup(
     install_requires=[
         "pycryptodome>=3.11.0",  # For cryptographic operations
         "pyjwt>=2.4.0",  # For JWT processing
-        "cryptography>=39.0.0",  # For modern cryptographic primitives (like Argon2, ECC)
-        "tkintertable",  # If tkinter is used with extended functionality
-        "requests>=2.20.0",
+        "cryptography>=39.0.0",  # For modern cryptographic primitives (Argon2, ECC, RSA, etc.)
+        "requests>=2.20.0",  # For making HTTP requests
+        "tkintertable",  # Optional: Extends tkinter table functionality
+        "pytest>=7.0.0",  # For testing (optional if running tests in dev environment)
+        "json",  # For JSON parsing (already included in Python, but listed for clarity)
+        "datetime",  # For timezone handling (standard library, listed for clarity)
     ],
     extras_require={
         "dev": ["pytest", "black", "flake8"],  # Development dependencies
