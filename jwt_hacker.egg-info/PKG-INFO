@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: jwt-hacker
-Version: 1.1.4
+Version: 1.1.5
 Summary: A futuristic tool to decode, analyze, and manipulate JWT tokens
 Home-page: https://github.com/GreyNodeSecurity/JWT_Hacker
 Author: Z3r0 S3c
@@ -34,7 +34,6 @@ Requires-Dist: cryptography>=39.0.0
 Requires-Dist: requests>=2.20.0
 Requires-Dist: tkintertable
 Requires-Dist: pytest>=7.0.0
-Requires-Dist: json
 Requires-Dist: datetime
 Provides-Extra: dev
 Requires-Dist: pytest; extra == "dev"

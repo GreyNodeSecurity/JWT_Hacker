@@ -4,7 +4,6 @@ cryptography>=39.0.0
 requests>=2.20.0
 tkintertable
 pytest>=7.0.0
-json
 datetime
 
 [dev]
