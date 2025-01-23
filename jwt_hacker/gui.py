@@ -90,7 +90,7 @@ def main():
     org_button.pack(side="left", padx=10)
 
     # App Name and Version (centered)
-    app_label = Label(header_frame, text="JWT Hacker v1.1.1", fg="lime", bg="black", font=("Courier", 16, "bold"))
+    app_label = Label(header_frame, text="JWT Hacker v1.1.6", fg="lime", bg="black", font=("Courier", 16, "bold"))
     app_label.pack(side="top", pady=5)
 
     # Coder Information
